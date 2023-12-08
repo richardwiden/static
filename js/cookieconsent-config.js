@@ -11,6 +11,9 @@ function inIframe() {
 
 CookieConsent.run({
     autoShow: !inIframe(),
+    onFirstConsent: ({cookie}) => {
+        location.reload()
+    },
     cookie: {
         name: 'cc_cookie',
         domain: 'mimer.com',
