@@ -10,6 +10,7 @@ function inIframe() {
 
 
 CookieConsent.run({
+    revision: 1,
     autoShow: !inIframe(),
     onFirstConsent: ({cookie}) => {
         location.reload()
